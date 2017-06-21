@@ -35,8 +35,5 @@ public class EmployeeSerializator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-
 	}
-
 }
