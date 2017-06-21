@@ -7,9 +7,9 @@ public class EmployeeSerializator {
 
 	public static void main(String[] args) 
 	{
-		Employee emp = new Employee();
-		emp.name = "mario";
-		emp.lastName = "cesar";
+		Employee thisGuy = new Employee();
+		thisGuy.name = "mario";
+		thisGuy.lastName = "cesar";
 		
 		FileOutputStream fout = null;
 		ObjectOutputStream oout = null;
@@ -18,7 +18,7 @@ public class EmployeeSerializator {
 			fout = new FileOutputStream("employee.txt");
 			oout = new ObjectOutputStream(fout);
 			
-			oout.writeObject(emp);
+			oout.writeObject(thisGuy);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
