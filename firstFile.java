@@ -20,7 +20,8 @@ public class EmployeeSerializator {
 		} catch (FileNotFoundException e) 
 		{
 			e.printStackTrace();
-		} catch (IOException e) 
+		} 
+		catch (IOException e) 
 		{
 			try {
 				oout.flush();
