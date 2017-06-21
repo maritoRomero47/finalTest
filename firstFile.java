@@ -20,7 +20,6 @@ public class EmployeeSerializator {
 			oout.writeObject(thisGuy);
 		} catch (FileNotFoundException e) 
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) 
 		{
