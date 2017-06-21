@@ -17,7 +17,8 @@ public class EmployeeSerializator {
 			fout = new FileOutputStream("employee.txt");
 			oout = new ObjectOutputStream(fout);
 			oout.writeObject(thisGuy);
-		} catch (FileNotFoundException e) 
+		} 
+		catch (FileNotFoundException e) 
 		{
 			e.printStackTrace();
 		} catch (IOException e) 
