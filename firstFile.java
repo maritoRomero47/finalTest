@@ -17,17 +17,19 @@ public class EmployeeSerializator {
 		{
 			fout = new FileOutputStream("employee.txt");
 			oout = new ObjectOutputStream(fout);
-			
 			oout.writeObject(thisGuy);
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) 
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (IOException e) 
+		{
 			try {
 				oout.flush();
 				oout.close();
 				fout.close();
-			} catch (IOException e1) {
+			} catch (IOException e1) 
+			{
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
@@ -35,8 +37,5 @@ public class EmployeeSerializator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-
 	}
-
 }
