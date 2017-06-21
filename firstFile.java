@@ -9,8 +9,7 @@ public class EmployeeSerializator {
 	{
 		Employee thisGuy = new Employee();
 		thisGuy.name = "mario";
-		thisGuy.lastName = "cesar";
-		
+		thisGuy.lastName = "cesar";	
 		FileOutputStream fout = null;
 		ObjectOutputStream oout = null;
 		try
